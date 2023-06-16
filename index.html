@@ -10,86 +10,52 @@
   <!-- CSS link -->
   <link rel="stylesheet" href="style.css">
   <!-- Fontawesome -->
-<link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.min.css">
+  <link rel="stylesheet" href="/Users/denydeny/Desktop/FACULTATE/Media Design/S2 MediaDesign/Front End Project/Maikee CSS/fontawesome-free-6.1.1-web/css/all.min.css">
   <!-- Font -->
   <link rel="stylesheet" href="https://use.typekit.net/znx8zvt.css">
-
 </head>
 
 <body>
 
-  <!-- Navigation bar mobile-->
+  <!-- Navigation bar -->
 
-    <nav id="navigationBar" class="navMobile">
-      <button class="mobileNavToggle" aria-controls="primaryNavigation" aria-expanded="false" type="button" name="button">
-        <span class="sr-only">Menu</span><i class="fa-solid fa-2x fa-bars"></i>
-      </button>
-
-      <ul  id="primaryNavigation" class="primaryNavigation" data-visible="false">
+    <nav id="navigationBar">
+      <ul>
         <li><a href="index.html" class="navItem home">Home</a></li>
         <li><a href="music.html" class="navItem">Music</a></li>
         <li><a href="#aboutMeZone" class="navItem">About</a></li>
-        <li><a href="agenda.html" class="navItem">Events</a></li>
-        <li><a href="/contactForm/public/contact.html" class="navItem">Contact</a></li>
+        <li><a href="agenda.html" class="navItem">Agenda</a></li>
+        <li><a href="contact.html" class="navItem">Contact</a></li>
 
-        <li><a href="https://www.instagram.com/maaikegirardinmusic/" target=”_blank” class="iconsSocial"> <i class="fa-brands  fa-instagram icons"></i></a></li>
-        <li><a href="https://www.youtube.com/user/MaaikeGirardin" target=”_blank” class="iconsSocial"> <i class="fa-brands  fa-youtube icons"></i></a></li>
-        <li><a href="https://soundcloud.com/maaike-girardin?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target=”_blank” class="iconsSocial"> <i class="fa-brands  fa-soundcloud icons"></i></a></li>
-        <li><a href="https://open.spotify.com/user/1130327144?si=7de4f84a7a8d4807" target=”_blank” class="iconsSocial"> <i class="fa-brands  fa-spotify icons"></i></a></li>
       </ul>
       <div class="logoContainer">
-        <a href="index.html"><img id="logo" src="images/loho-final.png" alt="LogoImg"></a>
+        <a href="index.html"><img id="logo" src="images/logo.png" alt="LogoImg"></a>
       </div>
+      <ul>
+        <li><a href="https://www.instagram.com/maaikegirardinmusic/" class="iconsSocial"> <i class="fa-brands fa-2x fa-instagram icons"></i></a></li>
+        <li><a href="https://www.youtube.com/user/MaaikeGirardin" class="iconsSocial"> <i class="fa-brands fa-2x fa-youtube icons"></i></a></li>
+        <li><a href="https://soundcloud.com/maaike-girardin?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" class="iconsSocial"> <i class="fa-brands fa-2x fa-soundcloud icons"></i></a></li>
+        <li><a href="https://open.spotify.com/user/1130327144?si=7de4f84a7a8d4807" class="iconsSocial"> <i class="fa-brands fa-2x fa-spotify icons"></i></a></li>
+        <li><a href="#"><i class="fa-solid fa-2x fa-globe languageIcon icons"></i></a></li>
+      </ul>
     </nav>
 
-
-    <!-- Navigation bar desktop-->
-
-      <nav id="navigationBar" class="navDesktop">
-        <button class="mobileNavToggle" aria-controls="primaryNavigation" aria-expanded="false" type="button" name="button">
-          <span class="sr-only">Menu</span><i class="fa-solid fa-2x fa-bars"></i>
-        </button>
-
-        <ul  id="primaryNavigation" class="primaryNavigation" data-visible="false">
-          <li><a href="index.html" class="navItem home">Home</a></li>
-          <li><a href="music.html" class="navItem">Music</a></li>
-          <li><a href="#aboutMeZone" class="navItem">About</a></li>
-          <li><a href="agenda.html" class="navItem">Events</a></li>
-          <li><a href="/public/contact.html" class="navItem">Contact</a></li>
-        </ul>
-
-        <div class="logoContainer">
-          <a href="index.html"><img id="logo" src="images/loho-final.png" alt="LogoImg"></a>
-        </div>
-
-        <ul id="iconsNavigation" class="iconsNavigation">
-          <li><a href="https://www.instagram.com/maaikegirardinmusic/" target=”_blank” class="iconsSocial"> <i class="fa-brands fa-2x  fa-instagram icons"></i></a></li>
-          <li><a href="https://www.youtube.com/user/MaaikeGirardin" target=”_blank” class="iconsSocial"> <i class="fa-brands fa-2x  fa-youtube icons"></i></a></li>
-          <li><a href="https://soundcloud.com/maaike-girardin?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" target=”_blank” class="iconsSocial"> <i class="fa-brands fa-2x  fa-soundcloud icons"></i></a></li>
-          <li><a href="https://open.spotify.com/user/1130327144?si=7de4f84a7a8d4807" target=”_blank” class="iconsSocial"> <i class="fa-brands fa-2x fa-spotify icons"></i></a></li>
-          <li><a href="#"><i class="fa-solid fa-globe fa-2x languageIcon icons"></i></a></li>
-        </ul>
-      </nav>
-
-    <!-- Language changer Desktop-->
-
-
-        <div class="languageContainer">
-          <button id="close" type="button" name="button"> <i class="fa-solid fa-xmark"></i></button>
-          <div class="EN language">
-          <a href="index.html"> <i class="fa-solid fa-2x  fa-mug-hot"></i></a>
-          <h2>EN</h2>
-          </div>
-          <div class="NL language">
-          <a href="indexDutch.html"> <i class="fa-solid fa-2x fa-bicycle"></i></a>
-          <h2>NL</h2>
-          </div>
-          <div class="IT language">
-          <a href="indexItalian.html"> <i class="fa-solid fa-2x fa-pizza-slice"></i></a>
-          <h2>IT</h2>
-          </div>
-        </div>
-
+<!-- Language changer -->
+    <div class="languageContainer">
+      <button id="close" type="button" name="button"> <i class="fa-solid fa-xmark"></i></button>
+      <div class="EN language">
+      <a href="index.html"> <i class="fa-solid fa-2x  fa-mug-hot"></i></a>
+      <h2>EN</h2>
+      </div>
+      <div class="NL language">
+      <a href="indexDutch.html"> <i class="fa-solid fa-2x fa-bicycle"></i></a>
+      <h2>NL</h2>
+      </div>
+      <div class="IT language">
+      <a href="indexItalian.html"> <i class="fa-solid fa-2x fa-pizza-slice"></i></a>
+      <h2>IT</h2>
+      </div>
+    </div>
 
 
 <!-- Quote Section -->
@@ -100,10 +66,13 @@
           <h1>Quote of the day:</h1>
           <h2>"Explore a beautiful world"</h2>
         </div>
-        <div class="discoverMusic">
-        <a href="music.html"> <button class="discoverMusicBtn" type="button" name="button">Discover my music</button></a>
-        </div>
       </div>
+      <div class="rightContainer">
+        <div class="innerDisk"></div></div>
+    </div>
+
+    <div class="discoverMusic">
+    <a href="music.html"> <button class="discoverMusicBtn" type="button" name="button">Discover my music</button></a>
     </div>
   </section>
 
@@ -111,20 +80,12 @@
 
 <!-- About me section -->
   <section id="aboutMeZone" class="whiteSection">
-    <img class="aboutMeImg" allign="right"  src="images/aboutMeImg.png" alt="">
-
-    <div class="">
-      <div class="titleAboutMe fade-in">
-        <h1>About Maaike Girardin</h1>
-      </div>
-      <div class="contentAboutMe slide-in fade-in from-left">
-        <p>Maaike is a Dutch-Canadian singer-songwriter, who has traveled allover the world. Maaike sings and plays the guitar. Her music often has a feminine tone, but is full of her hidden thoughts, confessions and broken hearts, so that you remain moved by her music. You can also hear many influences from her performances. In recent years she has traveled and played on stages in Netherlands, Canada, Belgium, Italy, Israel, Chile, Brazil, Bolivia, Vietnam, Thailandand, Australia, where she has collaborated with many musicians. In Italy, she was in the national final of Tour Music Fest and won the prize “Artista di Merito”.</p>
-      </div>
-
+    <div class="titleAboutMe fade-in">
+      <h1>About Maaike Girardin</h1>
     </div>
-    <a style="" href="#aboutTree"><i class="aboutMeArrow bounce fa-solid fa-angles-down "></i></a>
-
-
+    <div class="contentAboutMe slide-in fade-in from-left">
+      <p>Maaike is a Dutch-Canadian singer-songwriter, who has traveled allover the world. Maaike sings and plays the guitar. Her music often has a feminine tone, but is full of her hidden thoughts, confessions and broken hearts, so that you remain moved by her music. You can also hear many influences from her performances. In recent years she has traveled and played on stages in Netherlands, Canada, Belgium, Italy, Israel, Chile, Brazil, Bolivia, Vietnam, Thailandand, Australia, where she has collaborated with many musicians. In Italy, she was in the national final of Tour Music Fest and won the prize “Artista di Merito”.</p>
+    </div>
   </section>
 
   <section id="aboutTree">
@@ -185,7 +146,7 @@
       </g>
     </svg>
 
-    <div class="treeInstruction">
+    <div class="treeInstruction fade-in">
       <p>Each flower is a stage of Maaike's life.</p>
       <p>Watch her flourish!</p>
     </div>
@@ -211,7 +172,7 @@
 
 
     <footer id="footer">
-      <img id="logo" class="footerLogo rowCSS" src="images/logo2-final.png" alt="">
+      <img id="footerLogo" class="footerLogo rowCSS" src="images/logoVideo.png" alt="">
       <div class="footerMenu rowCSS">
         <p>Contact +31909090909</p>
         <p>Email: dededdede@DDEDED.COM</p>
@@ -253,7 +214,9 @@
       </div>
     </div>
 
-<script src="script.js" defer charset="utf-8"></script>
+
+    <script src="script.js" charset="utf-8"></script>
+
 </body>
 
 </html>

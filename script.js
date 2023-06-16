@@ -1,47 +1,3 @@
-
-// Navbar toggle
-const primaryNavigation = document.querySelector(".primaryNavigation");
-const navToggle = document.querySelector(".mobileNavToggle");
-const closeNav = document.querySelector(".fa-xmark");
-
-navToggle.addEventListener("click", () => {
-  const visibility = primaryNavigation.getAttribute("data-visible");
-
-  if(visibility === "false"){
-    primaryNavigation.setAttribute("data-visible", true);
-    navToggle.setAttribute("aria-expanded", true);
-
-  } else {
-    primaryNavigation.setAttribute('data-visible', false);
-    navToggle.setAttribute("aria-expanded", false);
-
-  }
-});
-
-
-//Language changer
-var language = document.querySelector(".languageContainer");
-var languageIcon = document.querySelector(".languageIcon");
-var closeBtn = document.querySelector("#close");
-
-languageIcon.addEventListener("click", function makeLanguageVisible(){
-  language.classList.add("visible");
-  languageIcon.style.color = "black";
-
-});
-
-
-closeBtn.addEventListener("click", function makeLanguageInvisible(){
-  language.classList.remove("visible");
-  languageIcon.style.color = "rgb(0,0,0,0.7)";
-
-});
-
-
-
-
-
-
 const musicContainer = document.querySelector('.musicContainer');
 const playBtn = document.querySelector('#play');
 const prevBtn = document.querySelector('#prev');
@@ -227,6 +183,23 @@ flower6.addEventListener("mouseover", function showScale(){
 flower6.addEventListener("mouseleave", function hideScale(){
   scale6.classList.remove("morePaddingScale");
   scale6.classList.remove("contentVisible6");
+});
+
+//Language changer
+var language = document.querySelector(".languageContainer");
+var languageIcon = document.querySelector(".languageIcon");
+var closeBtn = document.querySelector("#close");
+
+languageIcon.addEventListener("click", function makeLanguageVisible(){
+  language.classList.add("visible");
+  languageIcon.style.color = "black";
+
+});
+
+closeBtn.addEventListener("click", function makeLanguageInvisible(){
+  language.classList.remove("visible");
+  languageIcon.style.color = "rgb(0,0,0,0.7)";
+
 });
 
 
